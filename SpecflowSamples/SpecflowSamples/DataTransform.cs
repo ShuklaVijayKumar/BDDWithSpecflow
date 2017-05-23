@@ -8,7 +8,7 @@ using TechTalk.SpecFlow;
 namespace SpecflowSamples
 {
     [Binding]
-    public class Transform
+    public class DataTransform
     {
         [StepArgumentTransformation(@"(\d+) days ago")]
         public DateTime DaysAgoTransform(int daysAgo)
