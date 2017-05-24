@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Text;
 using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
+using SpecFlow.Assist.Dynamic;
 
 
 namespace SpecflowSamples.Features
@@ -17,8 +19,9 @@ namespace SpecflowSamples.Features
         [Then(@"I should see the passed data into the dynamic table")]
         public void ThenIShouldSeeThePassedDataIntoTheDynamicTable(Table table)
         {
-            //dynamic menu = table.
-            ScenarioContext.Current.Pending();
+            dynamic menu = table.CreateDynamicInstance();
+            Console.WriteLine("Menu Item 1: {0}", menu.Menu_1);
+            Console.WriteLine("Menu Item 2: {0}", menu.Menu_2);
         }
 
 
