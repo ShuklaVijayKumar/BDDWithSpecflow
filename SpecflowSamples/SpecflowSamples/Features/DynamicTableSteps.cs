@@ -23,7 +23,5 @@ namespace SpecflowSamples.Features
             Console.WriteLine("Menu Item 1: {0}", menu.Menu_1);
             Console.WriteLine("Menu Item 2: {0}", menu.Menu_2);
         }
-
-
     }
 }
