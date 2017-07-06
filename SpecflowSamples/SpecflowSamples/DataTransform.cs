@@ -15,5 +15,11 @@ namespace SpecflowSamples
         {
             return DateTime.Today.AddDays(-daysAgo);
         }
+
+        //[StepArgumentTransformation(@"(\d+) days ago")]
+        //public DateTime DaysAgoTransform(int daysAgo)
+        //{
+        //    return DateTime.Today.AddDays(-daysAgo);
+        //}
     }
 }
